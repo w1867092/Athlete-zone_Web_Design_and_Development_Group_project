@@ -1,0 +1,488 @@
+
+/* css for all */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family:'Poppins', 'sans-serif';
+}
+/* end of css for all */
+
+/* we are loading images to cache with the page, because of lagging images when transitioning one background to another. this will hide the loaded images */
+div#preload
+{
+    display: none;
+}
+
+/* add css for background images */
+#slide_background_image
+{
+    background-attachment: fixed; /*fix the background image. so now background image doesn't move with the content*/
+    background-repeat: no-repeat; /* we are not going repeat the image*/
+    background-size:100% auto;    /* set background with as 100% and height as auto*/
+    background-position: center;  /* set the image position which we want to display*/
+    animation: slidebg 60s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_11.jpg); /* adding a linear gradiant to the background image*/
+}
+
+/* background image animation using keyframes */
+@keyframes slidebg  /* here we are definning how keyframes should be added inside the given time period 4s or any value */
+{
+    0%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_6.jpg);
+    }
+    25%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_7.jpg);
+    }
+    50%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_8.jpg);
+    }
+    75%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_9.jpg);
+    }
+    100%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_10.jpg);
+    }
+}
+/* end of css styling for background images */
+
+/* set image borders for fresh products section */
+.fresh_products img
+{
+   border: 2px #fff solid;
+}
+
+
+/* set properties for containers*/
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0%;
+}
+/* set image width 100% */
+.img-responsive
+{
+    width: 100%;
+}
+/* set image border radius*/
+.img-curve
+{
+    border-radius: 15px;
+}
+/* this will set text align to right*/
+.text-right
+{
+    text-align: right;
+}
+/* this will set text align to center*/
+.text-center
+{
+    text-align: center;
+}
+/* this will set text align to left*/
+.text-left
+{
+    text-align: left;
+}
+/* this will set text color to white*/
+.text-white
+{
+    color: white;
+}
+/* clear the float property */
+.clearfix
+{
+    clear: both;
+    float: none;
+}
+/* this will be used in links*/
+a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* set a hover effect to anchor tags*/
+a:hover
+{
+    color: #ff4757;
+}
+/* this will apply styles to btns*/
+.btn
+{
+    padding: 2%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+/* this will set primary properties for buttons*/
+.btn-primary
+{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+/* this will set hover effect for btn-primary class*/
+.btn-primary:hover
+{
+    color: white;
+    background-color: #ff4757;
+}
+/* this will set h2 properties*/
+h2
+{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+/* this will set properties for h2 tags inside the container class*/
+.container h2
+{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+/* this will set properties for img tags */
+.container h2 img
+{
+    float: right;
+}
+/* this will set h3 properties*/
+h3
+{
+    font-size: 1.5rem;
+}
+/* this will set the properties for 3 fresh products containers */
+.float-container
+{
+    position: relative;
+    padding-top: 4%;
+}
+/* this will set the properties for 3 texts inside the 3 fresh products containers */
+.float-text
+{
+    position:absolute;
+    bottom: 50px;
+}
+
+/* these will set the alignment for 3 texts inside the 3 fresh products containers */
+.container1_text_align
+{
+    left: 21%;
+}
+.container2_text_align
+{
+    left: 13%;
+}
+.container3_text_align
+{
+    left: 16%;
+}
+/* end of setting alignment for 3 texts inside the 3 fresh products containers */
+
+/*______________________________________________________________________________________________________________*/
+/* styling products navigation bar*/
+.products_nav_bar
+{
+    /* 2% 17%*/
+    margin: 2% 17%;
+}
+.products_nav_bar:hover
+{
+    opacity: 70%;
+}
+.product_list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0% 12%;
+    overflow: hidden;
+    background-color: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5));
+}
+.product_list li:hover
+{
+    color: #333;
+}
+.product_list li
+{
+    float: left;
+}
+.product_list li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.product_list li a:hover
+{
+    background-color: #333;
+}
+/* end of products navigation bar */
+
+/* start styling 3 circular btns*/  
+.action_btns ul
+{
+    list-style-type: none;
+    margin: 3% 13%;
+} 
+.action_btns li 
+{
+    float: left;
+}
+.action_btns li a
+{
+    display: block;
+    padding: 10px 10px;
+}
+.action_btns li a:hover
+{
+    opacity: 60%;
+}
+.action_btns
+{
+    display: inline;
+}
+/* end styling 3 circular btns*/  
+
+/*_______________________________________________________________________________________________________________*/
+/* CSS for fresh products */
+.fresh_products
+{
+    padding: 4% 0;
+}
+
+/* set a properties to box-3 class which will add to 3 fresh product containers */
+.box-3
+{
+    width: 28%;
+    float: left;
+    margin: 2%;
+    opacity: 75%;
+}
+/* set hover transition effects to box-3 class which will add to 3 fresh product containers */
+.box-3:hover
+{
+    position: relative; 
+    transform: translateY(-20px);
+    transition: 1s;
+    opacity: 100%;
+}
+
+/* this will set set properties for product boxes*/
+.product-box
+{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 85%;
+}
+/* start of styling shopping cart*/
+.cart-box
+{
+    width: 72.5%;
+    margin: 0% 11%;
+    margin-top: 2%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 85%;
+}
+.cart_container h2
+{
+    padding-top: 3%;
+    margin-left: 10%;
+}
+.cart_container img
+{
+    float: right;
+    margin-right: 11%;
+}
+.cart-table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+.cart-table tr
+{
+    height: 100px;
+}
+.cart-table td,th
+{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/* this will style the buttons inside the cart table */
+.cart-table button
+{
+    font-size: 11px;
+    padding: 10px 4px;
+}
+
+/* end of styling shopping cart*/
+
+/* start of personal details section*/
+.personal-details-box
+{
+    width: 73.5%;
+    margin: 0% 10%;
+    margin-top: 2%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 85%;
+}
+.personal_details_container h2
+{
+    padding-top: 3%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.personal_details_container img
+{
+    float: right;
+    margin-right: 11%;
+}
+.personal_details_container
+{
+    padding-top: 24%;
+    margin-left: 1.2%;
+    margin-right: 0.1%;
+    margin-top: 18%;
+}
+input[type=text] ,select 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button
+{
+    width: 100%;
+    background-color: #ff6b81;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover 
+{
+    background-color: #ff4757;
+}
+/* end of personal details section*/
+
+/* start of invoice style*/
+.invoice-box
+{
+    width: 73.5%;
+    margin: 0% 10%;
+    margin-top: 2%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 85%;
+}
+.invoice_container h2
+{
+    padding-top: 48%;
+    margin-left: 10%;
+}
+.invoice_container img
+{
+    float: right;
+    margin-right: 11%;
+}
+.invoice_container
+{
+    margin-left: 1.2%;
+    margin-right: 0.1%;
+}
+/* we are applying height for invoice-box class. vh means vertical height */
+.invoice-box
+{
+    width: fit-content;
+    height: fit-content;
+    min-height: 80vh;
+    min-width: 73.5%;
+}
+/* end of invoice style*/
+
+/* this will set product image properties*/
+.product-img
+{
+    width: 20%;
+    float: left;
+}
+/* this will style product description*/
+.product-desc
+{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+/* this will style product price field*/
+.product-price
+{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.product-detail
+{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+
+    .btn
+    {
+        width: 91%;
+        padding: 2%;
+    }
+    .fresh_products
+    {
+        padding: 20% 0;
+    }
+    h2
+    {
+        margin-bottom: 10%;
+    }
+    .box-3
+    {
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .products_list
+    {
+        padding: 20% 0;
+    }
+
+    .product-box
+    {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+}
+

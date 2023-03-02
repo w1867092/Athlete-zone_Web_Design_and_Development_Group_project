@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Products</title>
+    <!-- link our javascript file -->
+    <script type="text/javascript" src="js/w1867067_buy_products_page_controller.js" defer></script>
+    <!-- link our css file -->
+    <link href="css/w1867067_navigation_bar.css" rel="stylesheet"/>
+    <link href="css/w1867067_buy_products_page.css" rel="stylesheet">
+</head>
+
+<body id="slide_background_image">
+<!--preloading all background images already to ensure seamless transitions-->
+<div id="preload">
+    <img src="images/backdrop_6.jpg"/>
+    <img src="images/backdrop_7.jpg"/>
+    <img src="images/backdrop_8.jpg"/>
+    <img src="images/backdrop_9.jpg"/>
+    <img src="images/backdrop_10.jpg"/>
+    <img src="images/backdrop_11.jpg"/>
+    <img src="images/logo.png">
+</div>
+
+<!--this is the navigation bar-->
+<div class="header">
+    <nav>
+        <a href="index.html">
+        <div class="our_logo">
+            <img src="images/logo.png" alt="This is our logo">
+            <span>Athlete Zone.</span>
+        </div>
+        </a>
+        <ul>
+            <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_mainpage.html">Home</a></li>
+            <li><a href="buy_products_page.html">Buy Products</a></li>
+            <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_Chamodh_query.html">Queries</a></li>
+            <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Quiz.html">Quiz</a></li>
+            <li><a href="https://w1867092.users.ecs.westminster.ac.uk/SVG_SiteMap.html">Site Map</a></li>
+            <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Studentsdeatails.html">Student Details</a></li>
+            <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Thumbnail.html">Thumbnails</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+</div>
+<!--end of navigation bar-->
+
+<!--fresh products Section Starts Here-->
+    <section class="fresh_products">
+        <div class="container">
+            <h2 class="text-center">Explore Our Fresh Products</h2>
+
+            <a href="#badminton">
+            <div class="box-3 float-container">
+                <img src="images/product_1.jpg" alt="Badminton Racket" class="img-responsive img-curve">
+                <h3 class="float-text text-white container1_text_align">Oliver Racket</h3>
+            </div></a>
+
+            <a href="#cycling">
+            <div class="box-3 float-container">
+                <img src="images/product_3.jpg" alt="Sport Bicycle" class="img-responsive img-curve">
+                <h3 class="float-text text-white container2_text_align">Scott Sport Bicycle</h3>
+            </div></a>
+
+            <a href="#basketball">
+            <div class="box-3 float-container">
+                <img src="images/product_2.jpg" alt="BasketBall Hoop" class="img-responsive img-curve">
+                <h3 class="float-text text-white container3_text_align">BasketBall Hoops</h3>
+            </div></a>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!--fresh products Section ends here-->
+
+    <!--products navigation bar starts here-->
+    <div id="product_nav" class="products_nav_bar">
+        <ul class="product_list">
+            <li><a class="active" href="#football">FootBall</a></li>
+            <li><a href="#cricket">Cricket</a></li>
+            <li><a href="#basketball">BasketBall</a></li>
+            <li><a href="#skating">Skating</a></li>
+            <li><a href="#cycling">Cycling</a></li>
+            <li><a href="#badminton">Badminton</a></li>
+        </ul>
+    </div>
+    <div class="action_btns">
+        <ul>
+            <li><a href="#shopping_cart"><img src="images/cart.png" alt="Shopping Cart Icon"></a></li>
+            <li><a href="#personal_info"><img src="images/order.png" alt="personal details icon"></a></li>
+            <li><a href="#invoice_h2"><img src="images/bill.png" alt="Invoice"></a></li>
+        </ul>
+    </div>
+    <!--products navigation bar ends here-->
+
+    <!--football products showcase start here-->
+    <section class="products_list"><br><br><br>
+        <div class="container">
+            <h2 id="football" class="text-center">FootBall<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+            
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/f1.jpg" alt="FootBall bag,Case image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Bags & Cases</h4>
+                    <p class="product-price">$40</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">500</span></label>
+                    <p class="product-detail">Premier Promotional Bags Cases and Cotton Totes for Events</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/f2.jpg" alt="PVC Football image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">PVC Footballs</h4>
+                    <p class="product-price">$50</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">100</span></label>
+                    <p class="product-detail">Match Ready PVC Footballs High Gloss High Quality durable.</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/f3.png" alt="Football shoes image" class="img-responsive img-curve">
+                </div>
+                <div class="product-desc">
+                    <h4 class="product-name">Football shoes</h4>
+                    <p class="product-price">$20</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">20</span></label>
+                    <p class="product-detail">Vector X Dynamic Football shoes, (Silver), high quality</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/f4.PNG" alt="Athletic Socks image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Athletic Socks</h4>
+                    <p class="product-price">$10</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">5</span></label>
+                    <p class="product-detail">BLITZSOX Hi-Tech Performance Athletic Socks , Pack of 3</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- football products showcase end here -->
+
+    <!-- cricket products showcase start here-->
+    <section class="products_list">
+        <div class="container">
+            <h2 id="cricket" class="text-center">Cricket<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/cr1.PNG" alt="Cricket Helmet image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Guard Cricket Helmet</h4>
+                    <p class="product-price">$30</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">800</span></label>
+                    <p class="product-detail">Guard Cricket Helmet for Mens and Boys. High quality High durable.</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/cr2.PNG" alt="Red Cricket Shoe image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Cricket Shoe</h4>
+                    <p class="product-price">$80</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">2000</span></label>
+                    <p class="product-detail">Feroc Swing Red Cricket Shoe for men and boys.High quality,durable</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/cr3.PNG" alt="Cricket BAT  image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Cricket Bat</h4>
+                    <p class="product-price">$100</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">400</span></label>
+                    <p class="product-detail">Cricket Bat Full Size Willow Cricket BAT for Tennis Ball, Leather Ball</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/cr4.PNG" alt="Cricket Kit Bag image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Cricket Kit Bag</h4>
+                    <p class="product-price">$500</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">243</span></label>
+                    <p class="product-detail">Cricket Bag for professional players High quality durable.</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- cricket products showcase end here -->
+    <!-- basketball products showcase start here -->
+    <section class="products_list">
+        <div class="container">
+            <h2 id="basketball" class="text-center">BasketBall<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bas1.jpg" alt="Nylon Basketball Ring with Net image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Basketball Ring</h4>
+                    <p class="product-price">$100</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">521</span></label>
+                    <p class="product-detail">Nylon Basketball Ring with Net & Screw/Bolts , Blue</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bas2.PNG" alt="PSE Rubber Basketball image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Rubber Basketball</h4>
+                    <p class="product-price">$60</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">43</span></label>
+                    <p class="product-detail">PSE Rubber Basketball, Size 7 (Orange) high quality</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bas3.PNG" alt="Basketball Shoes image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Basketball Shoes</h4>
+                    <p class="product-price">$200</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">90</span></label>
+                    <p class="product-detail">Step Out & Play 1171BK Mesh Combat 2.0 Basketball Shoes</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bas4.PNG" alt="Air Pump for BasketBalls image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Pressure Air Pump</h4>
+                    <p class="product-price">$90</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">63</span></label>
+                    <p class="product-detail">Pressure Air Pump for BasketBalls powerful high quality</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- basketball products showcase end here-->
+
+    <!-- skating products showcase start here-->
+    <section class="products_list">
+        <div class="container">
+            <h2 id="skating" class="text-center">Skating<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/s1.PNG" alt="Protective PVC Helmet image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Skating PVC Helmet</h4>
+                    <p class="product-price">$40</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">920</span></label>
+                    <p class="product-detail">Protective PVC Helmet Skating and Cycling Durable , High quality for boys and girls</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/s2.PNG" alt="Roller Skates image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Adjustable Inline Skates</h4>
+                    <p class="product-price">$20</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">580</span></label>
+                    <p class="product-detail">Adjustable Inline Skates with Illuminating Wheels | Upgraded Roller Skates for boys and girls</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- skating products showcase end here-->
+
+    <!-- cycling products showcase start here-->
+    <section class="products_list">
+        <div class="container">
+            <h2 id="cycling" class="text-center">Cycling<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/cy1.PNG" alt="Alloy Bicycle image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Scott Alloy Bicycle</h4>
+                    <p class="product-price">$2300.3</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">600</span></label>
+                    <p class="product-detail">Scott Sports Hybrid Alloy Bicycle, Shimano Gears,700 * 35C, DISC Brake</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/cy2.PNG" alt="Bicycle Air Pump image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Bicycle Air Pump</h4>
+                    <p class="product-price">$40</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">900</span></label>
+                    <p class="product-detail">Double Action Bicycle Air Pump , Ball Pump Easy to handle high quality</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- cycling products showcase end here-->
+
+    <!-- Badminton products showcase start here-->
+    <section class="products_list">
+        <div class="container">
+            <h2 id="badminton" class="text-center">Badminton<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bad1.PNG" alt="Badminton racket image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Oliver Badminton racket</h4>
+                    <p class="product-price">$200</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">340</span></label>
+                    <p class="product-detail">Oliver racket Aluminum Blend Badminton racket with Full Cover</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bad2.PNG" alt="Badminton Shuttlecock image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Badminton Shuttlecock</h4>
+                    <p class="product-price">$30</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">256</span></label>
+                    <p class="product-detail">Badminton Shuttlecock Pack of 10 Feather Shuttle Cock (White)</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bad3.PNG" alt="Badminton Net image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Nylon Badminton Net</h4>
+                    <p class="product-price">$80</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">8000</span></label>
+                    <p class="product-detail">Nylon Badminton Net for indoor and outdoor use</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="images/bad4.PNG" alt="Badminton Kit Bags image" class="img-responsive img-curve">
+                </div>
+
+                <div class="product-desc">
+                    <h4 class="product-name">Badminton Kit Bags</h4>
+                    <p class="product-price">$50</p>
+                    <label for="amount">Quantity :</label>
+                    <input type="text" class="amount" name="amount">
+                    <label>Available : <span class="quantity">12</span></label>
+                    <p class="product-detail">Badminton Kit Bags, with Extra Phone Compartment</p>
+                    <br>
+                    <a class="order_now btn btn-primary">Order Now</a>
+                    <a class="add_to_cart btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Badminton products showcase end here-->
+    <!-- product showcase end here -->
+
+    <!--starting cart section-->
+    <section class="cart">
+        <div class="cart_container">
+            <h2 id="shopping_cart" class="text-center">Shopping Cart<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+            <div class="cart-box">
+                <div class="cart-table">
+                    <table id="shopping_cart_table" class="cart-table">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price for 1 piece</th>
+                            <th>Total Price</th>
+                            <th>Product Detail</th>
+                            <th>Place a Order</th>
+                            <th>Remove Item</th>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of cart section-->
+
+    <!-- starting personal details section -->
+    <section class="personal_details">
+        <div class="personal_details_container">
+            <h2 id="personal_info" class="text-center">Personal Details<a href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+            <div class="personal-details-box">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+
+                    <label for="tel_no">Mobile No</label>
+                    <input type="text" id="tel_no" name="tel_no" placeholder="Your Mobile No eg : 0706754456">
+
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email_address" placeholder="Your Email Address eg : someone@mail.com">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Canada">Canada</option>
+                      <option value="USA">USA</option>
+                      <option value="South-Africa">South Africa</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Korea">Korea</option>
+                      <option value="China">China</option>
+                      <option value="Russia">Russia</option>
+                      <option value="India">India</option>
+                      <option value="England">England</option>
+                    </select>
+                    <button id="submit_btn">Place Order</button>
+            </div>
+        </div>
+    </section>
+    <!-- end of personal details section-->
+    <!-- start of invoice section-->
+    <section class="invoice">
+        <div class="invoice_container">
+            <h2 class="text-center">Invoice<a id="invoice_h2" href="#product_nav"><img src="images/up.png" alt="up icon"></a></h2>
+            <div class="invoice-box">
+            <label class="invoice_label"><span id="invoice_showcase"></span></label>
+            </div>
+        </div>
+    </section>
+    <!-- end of invoice section-->
+
+    <!-- footer section starts here -->
+    <section class="footer">
+        <div class="container text-center text-white">
+            <p>All rights reserved. Designed By <a href="editor_page.html">Sandeepa Induwara Samaranayake</a></p>
+        </div>
+    </section>
+    <!-- footer section ends here -->
+    
+</body>
+</html>
+

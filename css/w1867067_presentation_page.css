@@ -1,0 +1,160 @@
+/* created by sandeepa induwara samaranayake - sandeepa.20210302@iit.ac.lk */
+
+/* css style for whole page */
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Poppins', 'sans-serif';
+}
+/* end of css style for whole page*/
+
+/* start css style for background image*/
+#slide_background_image
+{
+    width: 100%;       
+    height: 100%;       
+    overflow: hidden;                                 /* hide if the content is too big to fit in to the background */                 
+    background-position:center;
+    background-size:cover;                            /* this will cover our whole display with the image */
+    background-attachment: fixed;
+    background-repeat: no-repeat;                     /* background is not going to repeat */
+    animation: slidebg 15s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(../images/backdrop_1.jpg);
+}
+/* end of css styling for background images*/
+@keyframes slidebg  /* here we are definning how keyframes should be added inside the given time period 4s or any value */
+{
+    0%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_1.jpg);
+    }
+    25%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_2.jpg);
+    }
+    50%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_3.jpg);
+    }
+    75%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_4.jpg);
+    }
+    100%
+    {
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)), url(../images/backdrop_5.jpg);
+    }
+}
+/* end css style for background images */
+
+/* we are loading images to cache with the page, because of lagging images when transitioning one background to another. this will hide the loaded images */
+div#preload
+{
+    display: none;
+}
+/* style title and subtitle*/
+.content
+{
+    margin-top: 5%;
+    margin-left: 9%;
+    color: #fff;
+    float: left;
+    width: 50%;
+}
+/* style h1 tage in content class*/
+.content h1
+{
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 140px;
+}
+
+/* style p tage in content class*/
+.content p
+{
+    max-width: 500px;
+    line-height: 28px;
+    padding-bottom: 5%;
+}
+
+/* style h3 in developers class*/
+.developers h3
+{
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* style developers information*/
+.developers
+{
+    margin-top: 3%;
+    margin-left: 0%;
+    color: #fff;
+    padding-top: 10%;
+    font-size: 23px;
+    font-weight: 250;
+}
+.content a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.btns
+{
+    border: 2px solid #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-left: 0%;
+}
+
+/*start of css animations to content - here we are creating an animation to slide the site content from right to left*/
+.slide-left
+{
+    animation: slideleft 2s linear forwards;
+}
+/* adding keyframes to our created animation*/
+@keyframes slideleft
+{
+    0%{
+        transform: translate(100px); /* set the transformation of content */
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);  /* set the transformation of content */
+        opacity: 1;
+    }
+}
+/*end of css animations to content*/
+
+/* this is for footer */
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0%;
+}
+.text-center
+{
+    text-align: center;
+}
+.text-white
+{
+    color: #ffffff;
+}
+.footer
+{
+    margin-top: 12%;
+}
+.footer a:hover
+{
+    color: #ff4757;
+}
+.footer a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* end of styling footer */

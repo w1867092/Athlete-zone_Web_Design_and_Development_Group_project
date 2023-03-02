@@ -1,0 +1,233 @@
+*{
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+body{
+    background-image:url("/images/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+
+}
+
+
+/* Page Heading */
+h1 {
+    font-family: Moderne Sans, sans-serif;
+    color: yellow;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    letter-spacing: .5rem;
+}
+
+h4 {
+    color: darkgoldenrod ;
+    text-align: center ;
+    text-shadow: 2px 2px 5px rgb(76, 0, 255);
+    font-size: 80px;
+    letter-spacing: 8px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+/* Sitemap */
+
+.sitemap {
+    width:fit-content;
+    height:650px;
+    margin:auto;
+}
+
+
+/* SVG */
+svg{
+    margin:auto;
+}
+
+.svg_container{
+    height:90%;
+}
+
+.rectbutton rect{
+    fill: aqua;
+    transition: fill 0.4s, stroke 0.5s;
+    stroke: midnightblue;
+    stroke-width: 4px;
+}
+
+.rectbutton:hover rect{
+    fill:gray;
+    cursor:pointer;
+}
+
+
+.buttontext{
+    font-weight:700;
+    text-align: center;
+}
+
+.buttontext:hover{
+    cursor:pointer;
+}
+
+line{
+    stroke:black;
+    stroke-width:7;
+}
+
+
+a {
+    color: black;
+}
+
+
+
+.footer span{
+    color: #fff;
+}
+
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 10%;
+}
+
+#main_button {
+    padding: 1%;
+    width: fit-content;
+    margin-top: 5%;
+    margin-left: 6px;
+    background: greenyellow;
+    border-radius: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: transform 0.5s, opacity 0.5s;
+}
+#main_button:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+#link {
+    text-decoration: none;
+}
+
+#topbutton{
+    padding: 1%;
+    width: fit-content;
+    margin-top: 2%;
+    margin-left: 6px;
+    background: lawngreen;
+    border-radius: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+    transition: transform 0.5s, opacity 0.5s;
+    font-size: 20px;
+}
+
+#topbutton:hover {
+    transform: scale(0.7);
+    opacity: 1;
+}
+
+#linktotop{
+    text-decoration: none;
+}
+
+#box{width: 100%; height: 180px;background-color: rgba(255,0,0,0.0);margin-left: 0px; text-align: center}
+
+
+
+
+
+
+
+
+/* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*/
+
+img
+{
+    box-shadow: 10px 0px 50px #00ffff;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <script src="js/Query_js.js" defer></script>
+    <link rel="stylesheet" href="css/Query_css.css">
+
+
+
+</head>
+
+<body style="margin: 0px" id="tquery">
+<!--this is the navigation bar-->
+<div class="header">
+    <nav id="top">
+        <a href="https://w1867067.users.ecs.westminster.ac.uk/w1867067/index.html">
+            <div class="our_logo">
+                <img src="images/logo.png" alt="This is our logo">
+                <span>Athlete Zone.</span>
+            </div>
+        </a>
+            <ul>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_mainpage.html">Home</a></li>
+                <li><a href="https://w1867067.users.ecs.westminster.ac.uk/w1867067/buy_products_page.html">Buy Products</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_Chamodh_query.html">Queries</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Quiz.html">Quiz</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/SVG_SiteMap.html">Site Map</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Studentsdeatails.html">Student Details</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Thumbnail.html">Thumbnails</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/help.html">Help</a></li>
+            </ul>    </nav>
+</div>
+<!--end of navigation bar-->
+<section id="section-one"></section>
+<div id="formJs">
+    <form id="show">
+
+        <label for="1name">Full Name:</label>
+        <input type="text" name="name" id="1name" placeholder="enter name" maxlength="50"> <br/>
+
+        <label for="1age">age:  </label>
+        <input type="number" name="age" id="1age" value="1" min="1" max="120"> <br/>
+
+        <label for="1address">address:</label>
+        <textarea id="1address" name="address"   rows="4" cols="10" style="height: 70px; width: 155px;"></textarea><br/>
+
+        <label for="get1">Delivery</label>
+        <input type="radio"  name="order" id="get1" value="Delivery" checked>
+
+        <label for="get2">Buy Product</label>
+        <input type="radio" name="order" id="get2" value="Buy Product">
+
+        <label for="get3">Return item</label>
+        <input type="radio"  name="order" id="get3" value="Return item"> <br/>
+
+        <label for="1email">Email:</label>
+        <input type="email" name="email" id="1email"  placeholder="enter email"> <br/>
+
+        <a href="#send"><input type="button" value="View" id="send_data" onclick="validate_info()"/></a>
+
+        <input type="reset" name="clear" value="Reset All">
+
+    </form>
+</div>
+
+
+<div id="toGetOut" class="answer_list">
+    <form method="post" action="mailto:chamod20210384@iit.ac.lk">
+
+        <fieldset>
+            <legend>This is the summary</legend>
+
+
+            <p id="fName"></p>
+            <p id="age"></p>
+            <p id="add"></p>
+            <p id="radio1out"></p>
+            <p id="emailout"></p>
+
+            <br>
+            <br>
+
+            <a href="#show"><input type="button" id="edit" name="edit" value="EDIT" onclick="prepare_for_edit()"></a>
+            <input type="submit" id="send" name="edit" value="SEND">
+
+        </fieldset>
+    </form>
+</div>
+<br><br>
+<a href="Developer_page.html" id="developerpage">
+    <input type="button" class="developer" value="Developer Page">
+
+    <br><br>
+    <div>
+
+        <a href="#tquery" id="linktotop">
+            <input type="button" class="developer" value="TOP">
+        </a>
+    </div>
+</a>
+
+</body>
+</html>
+

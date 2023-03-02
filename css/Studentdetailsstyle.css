@@ -1,0 +1,807 @@
+
+*{font-family:'Poppins', 'sans-serif';}
+/* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*//* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*//* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*//* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*//* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*//* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*//* start of navigation bar style*/
+/* this is the header(parent div) of our page*/
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 45%;
+}
+/* end of styling navigation bar*/
+html{
+	scroll-behavior:smooth;
+}
+body{
+    background-color:gray;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	
+    
+}
+
+
+/* Title */
+h1 {
+	font-family: Poppins,sans-serif;
+	text-align: center;
+	font-size: 2rem;
+	width: 100%;
+	letter-spacing: .5rem;
+}
+
+header {
+
+	width: 100%;
+	text-align: center;
+}
+
+.studentdtails{
+	  color:white;
+	  text-align:center;
+	 
+  }
+ .student{ 
+  position:relative;
+	  left:-10px;
+	  top:50px;
+ }
+  .members{
+       height: 1300px;
+       width:100%;
+       display: grid;
+       grid-template-columns: 50% 50%;
+  }
+  
+ h1.heading {
+    color: rgb(15, 1, 1) ;
+    text-align: center ;
+    text-shadow: 2px 2px 0px rgb(0, 255, 255);
+    font-size: 70px;
+    letter-spacing: 10px;
+  }
+  
+
+/* Student 1 */
+  .student1{
+    width: 365px;
+    height: 400px;
+    position: relative;
+	left:140px;
+	top:200px;
+    cursor: pointer;
+    padding-left: 90px;
+  }
+  .student1:hover .sandeepa{
+    height: 80%;
+  }
+  .student1 img {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+  .sandeepa{
+    width: 66%;
+    height: 0;
+    background: linear-gradient(rgba(120, 0, 255, 0.05),rgba(120, 0, 255, 0.10),rgba(120, 0, 255, 0.60),rgba(120, 0, 255,0.70),rgba(120, 0, 255, .80),rgba(120, 0, 255, 1));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .sandeepa h2{
+    color: white;
+    font-size: 20px;
+    /* border: 6px solid white; */
+    padding: 10px 10px;
+	position:absolute;
+	top:140px;
+	text-align:center;
+  }
+/* Student 1 */
+
+/* Student 2 */
+  .student2{
+    width: 365px;
+    height: 400px;
+    position: relative;
+	left:30px;
+	top:200px;
+    cursor: pointer;
+    padding-left: 90px;
+  }
+  .student2:hover .chamodh{
+    height: 80%;
+  }
+  .student2 img {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+  .chamodh{
+    width: 67%;
+    height: 0;
+    background: linear-gradient(rgba(120, 0, 255, 0.05),rgba(120, 0, 255, 0.10),rgba(120, 0, 255, 0.60),rgba(120, 0, 255,0.70),rgba(120, 0, 255, .80),rgba(120, 0, 255, 1));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .chamodh h2{
+    color: white;
+    font-size: 20px;
+    /* border: 6px solid white; */
+    padding: 10px 10px;
+	position:absolute;
+	top:140px;
+	text-align:center;
+  }
+/* Student 2 */
+
+/* Student 3 */
+  .student3{
+    width: 365px;
+    height: 400px;
+    position: relative;
+	left:140px;
+	top:80px;
+    cursor: pointer;
+    padding-left: 90px;
+  }
+  .student3:hover .lokith{
+    height: 80%;
+  }
+  .student3 img {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+  .lokith{
+    width: 66%;
+    height: 0;
+    background: linear-gradient(rgba(120, 0, 255, 0.05),rgba(120, 0, 255, 0.10),rgba(120, 0, 255, 0.60),rgba(120, 0, 255,0.70),rgba(120, 0, 255, .80),rgba(120, 0, 255, 1));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .lokith h2{
+    color: white;
+    font-size: 20px;
+    /* border: 6px solid white; */
+    padding: 10px 10px;
+	position:absolute;
+	top:140px;
+	text-align:center;
+  }
+/* Student 3 */
+
+
+/* Student 4 */
+  .student4{
+    width: 365px;
+    height: 400px;
+    position: relative;
+	left:30px;
+	top:80px;
+    cursor: pointer;
+    padding-left: 90px;
+  }
+  .student4:hover .kumod{
+    height: 80%;
+  }
+  .student4 img {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+  .kumod{
+    width: 67%;
+    height: 0;
+    background: linear-gradient(rgba(120, 0, 255, 0.05),rgba(120, 0, 255, 0.10),rgba(120, 0, 255, 0.60),rgba(120, 0, 255,0.70),rgba(120, 0, 255, .80),rgba(120, 0, 255, 1));
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+  }
+  .kumod h2{
+    color: white;
+    font-size: 20px;
+    /* border: 6px solid white; */
+    padding: 10px 10px;
+	position:absolute;
+	top:140px;
+	text-align:center;
+  }
+/* Student 4 */
+			  
+img
+{
+    box-shadow: 10px 0px 50px #00ffff;
+}				  
+.goTop{border-radius:14%;
+width:7%;
+transition:.3s ease-in;
+}
+.goTop:hover {
+  box-shadow: 0px 0px 40px rgba(120, 0, 255,1);
+  
+}
+
+
+#main_button {
+
+    width: 86px;
+
+    margin-left: 6px;
+    background: #58ab00;
+    border-radius: 20px;
+    font-weight: bold;
+    opacity: 0.9;
+    transition: transform 0.5s, opacity 0.5s;
+}
+#main_button:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+#link {
+    text-decoration: none;
+}

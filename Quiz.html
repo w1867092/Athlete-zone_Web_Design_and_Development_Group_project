@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+  <!-- INDEX.HTML PAGE # Lokith Srinayake, Sri Lanka-->
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+
+          <script type="text/javascript" src="js/controller.js"></script>
+          <link rel="stylesheet" href="css/Quizstyle.css">
+
+    <title>Quiz Page</title>
+
+   </head>
+
+    <body id="body_area" onload="show_question()">
+
+
+      <!--nav bar-->
+      <div class="header">
+        <nav>
+          <a href="https://w1867067.users.ecs.westminster.ac.uk/w1867067/index.htm">
+            <div class="our_logo">
+                  <img src="images/logo.png" alt="This is our logo">
+                  <span>Athlete Zone.</span>
+            </div>
+          </a>
+            <ul>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_mainpage.html">Home</a></li>
+                <li><a href="https://w1867067.users.ecs.westminster.ac.uk/w1867067/buy_products_page.html">Buy Products</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_Chamodh_query.html">Queries</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Quiz.html">Quiz</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/SVG_SiteMap.html">Site Map</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Studentsdeatails.html">Student Details</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Thumbnail.html">Thumbnails</a></li>
+                <li><a href="https://w1867092.users.ecs.westminster.ac.uk/help.html">Help</a></li>
+            </ul>  
+      	</nav>
+      </div>
+
+
+
+      <div class="left">
+             <h1>Sport Quiz</h1>
+             <h6 class="right">One attempt only</h6>
+
+      <input type="button" id="start"  name="start" onclick="timer();" value="Start Quiz">
+
+      <span id="timer"></span>
+
+
+<div id="full">
+<fieldset>
+    <legend>Start Quiz</legend>
+        <p>     <strong>Question 1</strong><br><br>
+                <span class="question"></span><br>
+
+                <span>
+                <br>
+
+              <input class="option1" >
+              <label class="labels1" ></label>
+
+              <input class="option1" >
+              <label class="labels1"></label>
+
+              <input class="option1" >
+              <label class="labels1"></label>
+
+              <input class="option1" >
+              <label class="labels1"></label>
+
+          </span>
+
+          <span class="feedback"></span>
+
+
+       </p>
+        <p> <strong>Question 2</strong><br><br>
+           <span class="question"></span><br>
+           <span>
+
+             <input class="option2">
+             <label class="labels2"></label>
+
+             <input class="option2">
+             <label class="labels2"></label>
+
+             <input class="option2">
+             <label class="labels2"></label>
+
+             <input class="option2">
+             <label class="labels2"></label>
+
+          </span>
+            <span class="feedback"></span>
+        </p>
+        <p> <strong>Question 3</strong><br><br>
+            <span class="question"></span><br>
+
+            <span>
+
+             <input class="option3">
+             <label class="labels3"></label>
+
+             <input class="option3">
+             <label class="labels3"></label>
+
+             <input class="option3">
+             <label class="labels3"></label>
+
+             <input class="option3">
+             <label class="labels3"></label>
+
+          </span>
+            <span class="feedback"></span>
+
+        </p>
+
+        <p> <strong>Question 4</strong><br><br>
+            <span class="question"></span><br>
+            <span>
+            <input class="option4">
+            <label class="labels4"></label>
+
+            <input class="option4">
+            <label class="labels4"></label>
+
+            <input class="option4">
+            <label class="labels4"></label>
+
+            <input class="option4">
+            <label class="labels4"></label>
+
+            </span>
+
+          <span class="feedback"></span>
+
+        </p>
+
+         <p> <strong>Question 5</strong><br><br>
+             <span class="question"></span><br>
+            <span><br>
+            <input class="option5">
+            <label class="labels5"></label>
+
+            <input class="option5">
+            <label class="labels5"></label>
+
+            <input class="option5">
+            <label class="labels5"></label>
+
+            <input class="option5">
+            <label class="labels5"></label>
+
+          </span>
+           <span class="feedback"></span>
+
+        </p>
+
+        <p> <strong>Question 6</strong><br><br>
+           <span class="question"></span><br>
+
+          <span><br>
+            <input class="option6">
+            <label class="labels6"></label>
+
+            <input class="option6">
+            <label class="labels6"></label>
+
+            <input class="option6">
+            <label class="labels6"></label>
+
+            <input class="option6">
+            <label class="labels6"></label>
+
+          </span>
+          <span class="feedback"></span>
+       </p>
+       <p> <strong>Question 7</strong><br><br>
+           <span class="question"></span><br>
+          <span><br>
+
+
+            <input class="option7">
+            <label class="labels7"></label>
+
+            <input class="option7">
+            <label class="labels7"></label>
+
+            <input class="option7">
+            <label class="labels7"></label>
+
+            <input class="option7">
+            <label class="labels7"></label>
+
+          </span>
+          <span class="feedback"></span>
+        </p>
+        <p> <strong>Question 8</strong><br><br>
+           <span class="question"></span><br>
+           <span><br>
+
+
+            <input class="option8">
+            <label class="labels8"></label>
+
+            <input class="option8">
+            <label class="labels8"></label>
+
+            <input class="option8">
+            <label class="labels8"></label>
+
+            <input class="option8">
+            <label class="labels8"></label>
+
+          </span>
+          <span class="feedback"></span>
+        </p>
+        <p> <strong>Question 9</strong><br><br>
+           <span class="question"></span><br>
+           <span><br>
+            <input class="option9">
+            <label class="labels9"></label>
+
+            <input class="option9">
+            <label class="labels9"></label>
+
+            <input class="option9">
+            <label class="labels9"></label>
+
+            <input class="option9">
+            <label class="labels9"></label>
+           </span>
+           <span class="feedback"></span>
+
+        </p>
+        <p>  <strong>Question 10</strong><br><br>
+            <span class="question"></span><br>
+            <span><br>
+
+
+            <input class="option10">
+            <label class="labels10"></label>
+
+            <input class="option10">
+            <label class="labels10"></label>
+
+            <input class="option10">
+            <label class="labels10"></label>
+
+            <input class="option10">
+            <label class="labels10"></label>
+            </span>
+
+            <span class="feedback"></span>
+        </p><br>
+
+         <button id="submit" onclick="submit_answer()">Submit</button>
+         <label id="result"></label>
+  </fieldset>
+      </div>
+        <br><br>
+
+
+
+          <div id="box1">
+              <a href="Developer.html" id="link">
+              <div id="main_button">Developer </div>
+              </a>
+          </div>
+          <br>
+         <div id="box2">
+          <a href="#top" id="linktotop">
+            <input type="button" value="TOP">
+          </a>
+        </div>
+
+        </div>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

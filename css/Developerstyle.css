@@ -1,0 +1,25 @@
+
+body{background-image:url("../images/IMAGEX.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:GhostWhite;
+    text-align:center;
+}
+.name{text-align:center;}
+.student{text-align:center;}
+.roll{text-align:center;color:yellow;}
+.unoredredlist1{text-align:center;list-style-type:none;color:BlanchedAlmond;}
+.task{text-align:center;color:yellow;}
+.unoredredlist2{text-align:center;list-style-type:none;color:BlanchedAlmond;}
+.round{width:500px;
+    background: rgba(0,0,0,.6);
+    padding:40px;
+    margin:auto;
+    margin-top: 5%;
+    color:white;}
+
+img{text-align:center;box-shadow: 10px 0px 50px #00ffff; }
+
+
+
+

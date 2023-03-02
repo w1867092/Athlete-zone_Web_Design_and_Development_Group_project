@@ -1,0 +1,80 @@
+/* start of navigation bar style*/
+/* this is the header(parent div) of our page*/ 
+.header
+{
+    overflow: hidden;
+    width: 100%;
+}
+
+/* these are the properties applicable for whole navigation bar*/
+nav
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  1.2% 1%; /* 1.2% 1%*/
+    transition: background 1s;
+}
+/* this styles only for our_logo class; flex will arrange items in a row*/
+/* font-size given in viewport width, that means it scales relative to the viewport size*/
+nav .our_logo
+{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;   /* font size is given relative to viewport width*/
+    font-weight: 600;
+    color: #fff;
+    padding-right:10vw; /*10*/ 
+}
+/* this is for our company logo */
+nav .our_logo img
+{
+    width: 60px;
+    margin-right: 10px;
+}
+/* this will set navigation items inline without bullets. margin 10px from top & bottom. 16px from left and right */
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 16px; /* 10px 16px */
+}
+/* this will remove the underline of the links and set font color and weight */
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;   
+}
+/* when cursor eneters to navigation bar opacity reduces and background color will be white*/
+nav:hover
+{
+    background-color: #fff;
+    opacity: 30%;
+}
+/* set hover effect to title*/
+nav:hover .our_logo
+{
+    color: #333;
+}
+
+/* set hover effect to list item <a> tags*/
+nav:hover ul li a
+{
+    color: #333;
+}
+/* this will set a border, add a padding & border radius and increase the font size when you hover it.*/
+nav ul li a:hover
+{
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* reduce opacity when hover the list items*/
+nav ul li:hover
+{
+    opacity: 90%;
+}
+/* end of styling navigation bar*/

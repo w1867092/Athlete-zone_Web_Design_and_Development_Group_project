@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Thumbnail</title>
+        <link rel="stylesheet" type="text/css" href="css/Thumbnail.css">
+    </head>
+    <body>
+
+        <header id="totop">
+            <!-- Navigation Bar -->
+            <div class="header">
+                <nav>
+                    <a href="https://w1867067.users.ecs.westminster.ac.uk/w1867067/index.html">
+                        <div class="our_logo">
+                            <img src="images/logo.png" alt="This is our logo">
+                            <span>Athlete Zone.</span>
+                        </div>
+                    </a>
+                    <ul>
+                        <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_mainpage.html">Home</a></li>
+                        <li><a href="https://w1867067.users.ecs.westminster.ac.uk/w1867067/buy_products_page.html">Buy Products</a></li>
+                        <li><a href="https://w1867092.users.ecs.westminster.ac.uk/w1867465_Chamodh_query.html">Queries</a></li>
+                        <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Quiz.html">Quiz</a></li>
+                        <li><a href="https://w1867092.users.ecs.westminster.ac.uk/SVG_SiteMap.html">Site Map</a></li>
+                        <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Studentsdeatails.html">Student Details</a></li>
+                        <li><a href="https://w1867092.users.ecs.westminster.ac.uk/Thumbnail.html">Thumbnails</a></li>
+                        <li><a href="https://w1867092.users.ecs.westminster.ac.uk/help.html">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h1>Athlete zone </h1>
+        </header>
+        <ul>
+            <!-- Change Background Color -->
+            <li class="dropdownList"><a class="navdropbutton">Change Page Background Colour</a>
+                <div class="dropdownListcontent">
+                    <a href="javascript:oneBackground()">Mistry Rose</a>
+                    <a href="javascript:twoBackground()">U.S. Flag red</a>
+                    <a href="javascript:threeBackground()">Dark Green</a>
+                    <a href="javascript:fourBackground()">Space Blue</a>
+                </div>
+
+            </li>
+            <!-- Change Body Text Color -->
+            <li class="dropdownList"><a class="navdropbutton">Change Body Text Colour</a>
+                <div class="dropdownListcontent">
+                    <a href="javascript:oneText()">Green</a>
+                    <a href="javascript:twoText()">Red</a>
+                    <a href="javascript:threeText()">Blue</a>
+                    <a href="javascript:fourText()">Black</a>
+
+                </div>
+            </li>
+        </ul>
+        <br/> <br/> <br/> <br/>
+
+        <h2> Select your favourite sport.</h2>
+        <!-- Image Row -->
+        <div class="imagerow">
+
+            <div class="imagecolumn">
+                <img src="images/sp-track-b-20160816.jpg" alt="Athletic Running Events" style="width:100%"
+                     onmouseover="enlargeImage(this);displayDescriptionRunning(this);">
+            </div>
+
+            <div class="imagecolumn">
+                <img src="images/Lasha_Talakhadze_Rio_2016.jpg" alt="Weightlifting" style="width:100%"
+                     onmouseover="enlargeImage(this);displayDescriptionWeightlifting(this);">
+            </div>
+
+            <div class="imagecolumn">
+                <img src="images/Katie-Ledecky-American-lead-way-women-world-2016.webp" alt="Swimming" style="width:100%"
+                     onmouseover="enlargeImage(this);displayDescriptionSwimming(this);">
+            </div>
+
+            <div class="imagecolumn">
+                <img src="images/09ron4.jpg" alt="Football" style="width:100%"
+                     onmouseover="enlargeImage(this); displayDescriptionFootball(this);">
+            </div>
+
+            <div class="imagecolumn">
+                <img src="images/963822.jpg" alt="Basketball " style="width:100%"
+                     onmouseover="enlargeImage(this);displayDescriptionBasketball(this);">
+            </div>
+
+        </div>
+
+
+        <div class="imagecontainer">
+            <span onclick="this.parentElement.style.display='none'" class="closebutton">&times;</span> <!--Close Button-->
+            <img id="enlargeImage" style="width:100%" alt="Image Description"> <!--Enlarging Image-->
+            <div id="imageTitle"></div>
+            <div >
+                <h4 id="imageDescription"></h4>
+            </div>
+        </div>
+
+
+        <script>
+
+            function enlargeImage(images) {
+                var enlargeImage = document.getElementById("enlargeImage");
+                var imageTitle = document.getElementById("imageTitle");
+                enlargeImage.src = images.src;
+                imageTitle.innerHTML = images.alt;
+                enlargeImage.parentElement.style.display = "block";
+            }
+            // Displaying Image Description
+            function displayDescriptionRunning() {
+                document.getElementById("imageDescription").innerHTML = "Sprints (100m, 200m, 400m) Middle distance (800m, 1500m) Long distance (3000m Steeplechase, 5000m, 10,000m) Hurdles (110/100m, 400m) Track and field is categorized under the umbrella sport of athletics, which also includes road running, cross country running, and racewalking. The foot racing events, which include sprints, middle- and long-distance events, racewalking, and hurdling, are won by the athlete who completes it in the least time.";
+            }
+            function displayDescriptionWeightlifting() {
+                document.getElementById("imageDescription").innerHTML = "Weightlifting is an athletic discipline which requires lifting of heavy weights in a progressive manner. It not only tests the physical prowess of an individual but also his/her rate of force generation, i.e., ballistic actions of lifting the weights in minimum amount of time.Olympic weightlifting, or Olympic-style weightlifting (officially named Weightlifting), is a sport in which athletes compete in lifting a barbell loaded with weight plates from the ground to overhead, with each athlete vying to successfully lift the heaviest weights.";
+            }
+            function displayDescriptionSwimming() {
+                document.getElementById("imageDescription").innerHTML = "Swimming is an individual or team racing sport that requires the use of one's entire body to move through water. The sport takes place in pools or open water (e.g., in a sea or lake). Competitive swimming is one of the most popular Olympic sports, with varied distance events in butterfly, backstroke, breaststroke, freestyle, and individual medley. In addition to these individual events, four swimmers can take part in either a freestyle or medley relay. A medley relay consists of four swimmers who will each swim a different stroke, ordered as backstroke, breaststroke, butterfly and freestyle.";
+            }
+            function displayDescriptionFootball() {
+                document.getElementById("imageDescription").innerHTML = "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football normally means the form of football that is the most popular where the word is used. Sports commonly called football include association football (known as soccer in North America and Oceania); gridiron football (specifically American football or Canadian football); Australian rules football; rugby union and rugby league; and Gaelic football. These various forms of football share to varying extent common origins and are known as football codes. ";
+            }
+            function displayDescriptionBasketball() {
+                document.getElementById("imageDescription").innerHTML = "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court, while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless made from behind the three-point line, when it is worth three. After a foul, timed play stops and the player fouled or designated to shoot a technical foul is given one, two or three one-point free throws. The team with the most points at the end of the game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.";
+            }
+
+            // Change Background Color
+            function oneBackground() {
+                document.body.style.backgroundColor = "#ed908e";
+            }
+            function twoBackground() {
+                document.body.style.backgroundColor = "#dd363e";
+            }
+            function threeBackground() {
+                document.body.style.backgroundColor = "#2c6047";
+            }
+            function fourBackground() {
+                document.body.style.backgroundColor = "#1b2e9b";
+            }
+
+
+            // Change Body Text Color
+            function oneText() {
+                document.getElementById("imageDescription").style.color = "green";
+            }
+            function twoText() {
+                document.getElementById("imageDescription").style.color = "red";
+            }
+            function threeText() {
+                document.getElementById("imageDescription").style.color = "blue";
+            }
+            function fourText() {
+                document.getElementById("imageDescription").style.color = "black";
+            }
+
+
+        </script>
+
+        <div id="box">
+            <a href="https://w1867092.users.ecs.westminster.ac.uk/developer_page.html" id="link">
+                <div id="main_button">Developer </div>
+            </a>
+            <br>
+            <a href="#totop" id="linktotop">
+                <div id="topbutton">_^_</div>
+            </a>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer">
+
+        </div>
+    </body>
+</html>
